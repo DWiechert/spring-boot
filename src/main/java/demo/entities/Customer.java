@@ -5,6 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * Customer entity. Will be saved to database because of the {@code @Entity} annotation with table name of {@code Customer}.
+ * 
+ * @author Dan Wiechert
+ */
 @Entity
 public class Customer {
 	@Id
@@ -13,10 +18,13 @@ public class Customer {
 	private String firstName;
 	private String lastName;
 
+	/**
+	 * Used by JPA.
+	 */
 	protected Customer() {
 	}
 
-	public Customer(String firstName, String lastName) {
+	public Customer(final String firstName, final String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
@@ -25,7 +33,7 @@ public class Customer {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(final long id) {
 		this.id = id;
 	}
 
@@ -33,7 +41,7 @@ public class Customer {
 		return firstName;
 	}
 
-	public void setFirstName(String firstName) {
+	public void setFirstName(final String firstName) {
 		this.firstName = firstName;
 	}
 
@@ -41,13 +49,12 @@ public class Customer {
 		return lastName;
 	}
 
-	public void setLastName(String lastName) {
+	public void setLastName(final String lastName) {
 		this.lastName = lastName;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Customer[id=%d, firstName='%s', lastName='%s']",
-				id, firstName, lastName);
+		return String.format("Customer[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);
 	}
 }
