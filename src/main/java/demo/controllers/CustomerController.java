@@ -25,19 +25,17 @@ public class CustomerController {
 	CustomerRepository repository;
 
 	@RequestMapping("/")
-	@ResponseBody
+	@ResponseBody // This is not needed due to having @RestController. That provides this implicitly to all methods
 	public String home() {
 		return "Hello World!";
 	}
 
 	@RequestMapping("/allCustomers")
-	@ResponseBody
 	public List<Customer> allCustomers() {
 		return Lists.newArrayList(repository.findAll());
 	}
 
 	@RequestMapping("/customer")
-	@ResponseBody
 	public List<Customer> customerLastName(@RequestParam(value = "firstName", required = false) final String firstName,
 			@RequestParam(value = "lastName", required = false) final String lastName) {
 		if (!StringUtils.isEmpty(firstName) && !StringUtils.isEmpty(lastName)) {
