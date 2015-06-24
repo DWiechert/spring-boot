@@ -7,6 +7,13 @@ import org.springframework.data.repository.query.Param;
 
 import demo.entities.Person;
 
+/**
+ * Simple CRUD repository with methods added.
+ * <p/>
+ * Also acts as a controller and can be accessed directly
+ * 
+ * @author Dan Wiechert
+ */
 public interface PersonRepository extends PagingAndSortingRepository<Person, Long> {
 	List<Person> findByFirstName(@Param("firstName") String firstName);
 
