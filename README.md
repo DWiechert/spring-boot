@@ -23,24 +23,24 @@ A quick and easy way to get a Spring project up and running. By following Spring
 * [start.spring.io](http://start.spring.io/)
  * Easy website to start a new Spring Boot application
  * Select metadata items
-  * POM information
-   * Group
-   * Artifact
-   * Name
-   * Description
-  * Java version
-  * Spring Boot version
-  * Packaging
+   * POM information
+     * Group
+      * Artifact
+      * Name
+      * Description
+    * Java version
+    * Spring Boot version
+    * Packaging
  * Select starter dependencies
-  * Core
-  * Web
-  * Template Engines
-  * Data
-  * Cloud
-  * Database
-  * Social
-  * I/O
-  * Ops
+   * Core
+    * Web
+    * Template Engines
+    * Data
+    * Cloud
+    * Database
+    * Social
+    * I/O
+    * Ops
 
 ### Dependencies
 For this demo, I have selected the following dependencies:
