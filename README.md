@@ -8,6 +8,8 @@
 * **[Running](#running)**
 * **[Annotations](#annotations)**
 * **[Entities](#entities)**
+* **[Repositories](#repositories)**
+* **[Controllers](#controllers)**
 * **[Interfaces](#interfaces)**
 
 ### Overview
@@ -74,8 +76,19 @@ Several annotations are used throughout this project:
 * `@Component` - Indicates a class should be picked up by auto-detection for running.
 * `@Order` - Indicates the order in which a specific component should be ran.
 * `@RestController` - This is equivalent to using `@Controller` and `@ResponseBody`. It indicates a class is a controller for REST requests. It also implicitly makes each method return a JSON response body.
+* `@Autowired` - Autowires in objects/dependencies.
+* `@RequestMapping` - Indicates a REST endpoint inside of a controller.
+* `@ResponseBody` - Indicates that the response body should be JSON.
+* `@Param` - Indicates a REST request parameter.
+* `@Entity` - Indicates an entity which should be stored in a database. With no other config, the database table is the name of the class.
+* `@Id` - Indicates which field is the primary id on an entity.
+* `@GeneratedValue` - Indicates that the id field should be an auto-generated number.
 
 ### Entities
+
+### Repositories
+
+### Controllers
 
 ### Interfaces
 
