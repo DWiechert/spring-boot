@@ -85,12 +85,38 @@ Several annotations are used throughout this project:
 * `@GeneratedValue` - Indicates that the id field should be an auto-generated number.
 
 ### Entities
+* Customer - Compromised of a first and last name.
+* Person - Compromised of a first and last name.
 
 ### Repositories
+* CustomerRepository - A `CrudRepository` with extra search methods.
+* PersonRepository - A `PagingAndSortingRepository` with extra search methods. 
 
 ### Controllers
+* CustomerController - A REST controller built on top of the `CustomerRepository`. Provides simple REST endpoints with request parameters and returns results in JSON.
+* PersonRepository - A very simple REST controller built in the repository itself. Provides searches based on the interface methods, and sorting/pagination based on interface it extends.
 
 ### Interfaces
+* Banner - Used to create a custom banner on startup.
+* CrudRepository - Basic repository interface that provides simple CRUD operation methods:
+ * Save
+   * One
+   * Multiple
+ * Find
+   * One by id
+   * Multiple by id
+   * All
+ * Exists by id
+ * Count
+ * Delete
+   * One by id
+   * One by entity
+   * Multiple by entity
+   * All
+* PagingAndSortingRepository - Repository built on top of the `CrudRepository`. Adds pagination and sorting operations:
+ * Find all
+   * By some sorting
+   * By pagination
 
 ### Links
 * http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/

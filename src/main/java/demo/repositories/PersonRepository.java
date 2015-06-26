@@ -10,7 +10,7 @@ import demo.entities.Person;
 /**
  * Simple CRUD repository with methods added.
  * <p/>
- * Also acts as a controller and can be accessed directly
+ * Also acts as a controller and can be accessed directly due to the {@link Param} annotations.
  * 
  * @author Dan Wiechert
  */
