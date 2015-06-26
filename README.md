@@ -101,22 +101,22 @@ Several annotations are used throughout this project:
 * CrudRepository - Basic repository interface that provides simple CRUD operation methods:
  * Save
    * One
-   * Multiple
+    * Multiple
  * Find
    * One by id
-   * Multiple by id
-   * All
+    * Multiple by id
+    * All
  * Exists by id
  * Count
  * Delete
    * One by id
-   * One by entity
-   * Multiple by entity
-   * All
+    * One by entity
+    * Multiple by entity
+    * All
 * PagingAndSortingRepository - Repository built on top of the `CrudRepository`. Adds pagination and sorting operations:
  * Find all
    * By some sorting
-   * By pagination
+    * By pagination
 
 ### Links
 * http://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/
