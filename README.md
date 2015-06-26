@@ -98,6 +98,7 @@ Several annotations are used throughout this project:
 
 ### Interfaces
 * Banner - Used to create a custom banner on startup.
+* CommandLineRunner - Used to run code immediately after the full Spring environment has been set up.
 * CrudRepository - Basic repository interface that provides simple CRUD operation methods:
  * Save
    * One
